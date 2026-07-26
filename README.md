@@ -1,6 +1,8 @@
 # Password Generator
 
-**Live Demo:** [https://passwordgeneratorinterns.netlify.app/](https://passwordgeneratorinterns.netlify.app/)
+**Live Demos:** 
+- **Netlify:** [https://passwordgeneratorinterns.netlify.app/](https://passwordgeneratorinterns.netlify.app/)
+- **Render:** [https://password-generator-c82w.onrender.com](https://password-generator-c82w.onrender.com)
 
 ## Project Description
 A highly interactive, clean, and responsive web application that generates secure, random passwords based on user-defined criteria. Users can easily select the desired password length and specify whether to include uppercase letters, lowercase letters, numbers, and symbols. The application features dynamic DOM manipulation, real-time visual feedback, a password copy-to-clipboard function, and a modern, animated user interface.
