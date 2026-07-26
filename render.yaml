@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: password-generator
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
