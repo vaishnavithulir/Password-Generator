@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGen | Password Generator</title>
+    <!-- Futuristic Tech Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CRT Scanlines overlay -->
+    <div class="scanlines"></div>
+    
+    <div class="cyber-container">
+        <div class="header">
+            <h2>PASSWORD GENERATOR</h2>
+            <div class="status-indicator"></div>
+        </div>
+        
+        <div class="output-panel">
+            <div class="output-scan"></div>
+            <span id="result" class="decoded-text">AWAITING_INPUT...</span>
+            <button class="icon-btn" id="clipboard" title="Copy to clipboard">
+                <i class="far fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="controls-panel">
+            <div class="control-group length-group">
+                <div class="length-label">
+                    <span>SEC_LENGTH:</span>
+                    <span id="length-val" class="highlight">16</span>
+                </div>
+                <input type="range" id="length" min="4" max="32" value="16" class="cyber-slider" />
+            </div>
+
+            <div class="toggles-grid">
+                <label class="cyber-toggle">
+                    <input type="checkbox" id="uppercase" checked />
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label">UPPER_CASE</span>
+                </label>
+                <label class="cyber-toggle">
+                    <input type="checkbox" id="lowercase" checked />
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label">LOWER_CASE</span>
+                </label>
+                <label class="cyber-toggle">
+                    <input type="checkbox" id="numbers" checked />
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label">NUMERICS</span>
+                </label>
+                <label class="cyber-toggle">
+                    <input type="checkbox" id="symbols" checked />
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label">SYMBOLS</span>
+                </label>
+            </div>
+        </div>
+
+        <button class="cyber-btn" id="generate">
+            <span class="btn-text">INITIALIZE_GENERATOR</span>
+            <span class="btn-glitch"></span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
